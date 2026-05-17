@@ -9,8 +9,8 @@ const projects = [
     image: "assets/project-previews/codedeep-ui.png",
     link: "https://codedeepai.com/",
     skills: [
-      { img: "/assets/imgs/reactjs.png", title: "React JS" },
-      { img: "/assets/imgs/css.webp", title: "CSS & SCSS" },
+      { img: "assets/imgs/reactjs.png", title: "React JS" },
+      { img: "assets/imgs/css.webp", title: "CSS & SCSS" },
     ]
   },
    {
@@ -23,10 +23,10 @@ const projects = [
     image: "assets/project-previews/moverjunction-ui.png",
     link: "https://www.moverjunction.com/",
     skills: [
-      { img: "/assets/imgs/html-img.webp", title: "HTML" },
-      { img: "/assets/imgs/css.webp", title: "CSS & SCSS" },
-      { img: "/assets/imgs/js.webp", title: "JavaScript" },
-      { img: "/assets/imgs/php-img.png", title: "PHP" }
+      { img: "assets/imgs/html-img.webp", title: "HTML" },
+      { img: "assets/imgs/css.webp", title: "CSS & SCSS" },
+      { img: "assets/imgs/js.webp", title: "JavaScript" },
+      { img: "assets/imgs/php-img.png", title: "PHP" }
     ]
   },
   {
@@ -39,10 +39,10 @@ const projects = [
     image: "assets/project-previews/onesimplewish-ui.png",
     link: "https://www.onesimplewish.org/",
     skills: [
-      { img: "/assets/imgs/html-img.webp", title: "HTML" },
-      { img: "/assets/imgs/css.webp", title: "CSS & SCSS" },
-      { img: "/assets/imgs/js.webp", title: "JavaScript" },
-      { img: "/assets/imgs/php-img.png", title: "PHP" }]
+      { img: "assets/imgs/html-img.webp", title: "HTML" },
+      { img: "assets/imgs/css.webp", title: "CSS & SCSS" },
+      { img: "assets/imgs/js.webp", title: "JavaScript" },
+      { img: "assets/imgs/php-img.png", title: "PHP" }]
   },
   {
     icon: "fas fa-bullhorn",
@@ -54,10 +54,10 @@ const projects = [
     image: "assets/project-previews/cretorial-ui.png",
     link: "https://www.cretorial.com/",
     skills: [
-      { img: "/assets/imgs/html-img.webp", title: "HTML" },
-      { img: "/assets/imgs/css.webp", title: "CSS & SCSS" },
-      { img: "/assets/imgs/js.webp", title: "JavaScript" },
-      { img: "/assets/imgs/php-img.png", title: "PHP" }]
+      { img: "assets/imgs/html-img.webp", title: "HTML" },
+      { img: "assets/imgs/css.webp", title: "CSS & SCSS" },
+      { img: "assets/imgs/js.webp", title: "JavaScript" },
+      { img: "assets/imgs/php-img.png", title: "PHP" }]
   },
   {
     icon: "fas fa-building",
@@ -69,9 +69,9 @@ const projects = [
     image: "assets/project-previews/cblacosta-ui.png",
     link: "https://www.cblacosta.com/",
     skills: [
-      { img: "/assets/imgs/wordpress.png", title: "WordPress" },
-      { img: "/assets/imgs/css.webp", title: "CSS & SCSS" },
-      { img: "/assets/imgs/php-img.png", title: "PHP" }]
+      { img: "assets/imgs/wordpress.png", title: "WordPress" },
+      { img: "assets/imgs/css.webp", title: "CSS & SCSS" },
+      { img: "assets/imgs/php-img.png", title: "PHP" }]
   },
 
   
