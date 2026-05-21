@@ -1,135 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pooja Rana | UI Developer, Frontend Designer & Responsive Website Specialist</title>
-    <meta
-      name="description"
-      content="Pooja Rana is a UI Developer and Graphic Designer in Delhi creating responsive websites, landing pages, clean frontend layouts, and polished user interfaces."
-    />
-    <meta
-      name="keywords"
-      content="Pooja Rana, UI Developer, Graphic Designer, Frontend Developer, Responsive Websites, Landing Pages, HTML CSS JavaScript, Delhi"
-    />
-    <meta name="author" content="Pooja Rana" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <script>
-      if (window.location.pathname.endsWith("/index.html")) {
-        window.history.replaceState({}, "", `${window.location.pathname.replace(/index\.html$/, "")}${window.location.search}${window.location.hash}`);
-      }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    <link rel="stylesheet" href="styles/main.css?v=2026-04-05-06" />
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js" defer></script>
-    <script src="scripts/main.js?v=2026-04-05-06" defer></script>
-    <script src="scripts/data.js" defer></script>
-  </head>
-  <body data-page="home">
-    <div id="site-header" data-include="components/header.html"></div>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-           <p class="eyebrow hero-eyebrow animate-item"><span><i class="fas fa-home"></i></span>Introduce</p>
-              <h1 class="hero-title animate-item">
-                <span class="hero-title-line">Hi, I’m Pooja Rana <br/><span class="hero-inline-accent"> UI Developer</span></span><br/>
-                <span class="hero-title-line">   </span>
-              </h1>
-              <p class="hero-copy animate-item">
-                I design and develop <strong> modern</strong>, <strong>responsive</strong>, and <strong>user-friendly</strong> web interfaces that deliver seamless digital experiences, focusing on performance, <strong>accessibility</strong>, and creating <strong> high-quality</strong> ,user-centric<strong>  solutions</strong>.
-              </p> 
-              <div class="hero-actions animate-item">
-                <a class="project-round-btn" href="#featuredProjects" title="My Projects">
-                  <img
-                      class="project-round-btn-icon"
-                      src="assets/imgs/round-text.png"
-                      alt="Projects"
-                      loading="eager"
-                      fetchpriority="high"
-                      decoding="async"
-                    />
-                    <img
-                      class="arrow-icon"
-                      src="assets/imgs/arrow-down.svg"
-                      alt="Projects"
-                      loading="eager"
-                      fetchpriority="high"
-                      decoding="async"
-                    />
-                    </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pooja Rana | UI Developer, Frontend Designer & Responsive Website Specialist</title>
+  <meta name="description"
+    content="Pooja Rana is a UI Developer and Graphic Designer in Delhi creating responsive websites, landing pages, clean frontend layouts, and polished user interfaces." />
+  <meta name="keywords"
+    content="Pooja Rana, UI Developer, Graphic Designer, Frontend Developer, Responsive Websites, Landing Pages, HTML CSS JavaScript, Delhi" />
+  <meta name="author" content="Pooja Rana" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script>
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.history.replaceState({}, "", `${window.location.pathname.replace(/index\.html$/, "")}${window.location.search}${window.location.hash}`);
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css?v=2026-04-05-06" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js" defer></script>
+  <script src="scripts/main.js?v=2026-04-05-06" defer></script>
+  <script src="scripts/data.js" defer></script>
+</head>
+
+<body data-page="home">
+  <div id="site-header" data-include="components/header.html"></div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pe-md-4">
+            <p class="eyebrow hero-eyebrow animate-item"><span><i class="fas fa-home"></i></span>UI Developer</p>
+            <h1 class="hero-title animate-item">Creating Beautiful Interfaces. <span class="hero-inline-accent">Building
+                Better Experiences.</span></h1>
+            <p class="hero-copy animate-item mx-580">
+              I'm a UI Developer who loves crafting clean, responsive and user-friendly web experiences that blend
+              creativity with technology
+            </p>
+            <div class="hero-actions animate-item">
+              <a class="btn btn-primary btn-lg " href="#featuredProjects" title="My Projects">
+                View my Work <img src="assets/imgs/arrow-icon.svg" alt="External link" />
+              </a>
+            </div>
+            <div class="social-connection">
+              <p>Let's connect!</p>
+              <div class="socialLinks">
+                <a href="#" class="link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="link">
+                  <i class="far fa-envelope"></i>
+                </a>
               </div>
-              <!-- <div class="hero-panel animate-item">
-                  <div class="hero-photo-placeholder is-photo">
-                    <img
-                      class="hero-photo-image"
-                      src="assets/imgs/profile-img.jpeg"
-                      alt="Pooja Rana"
-                      width="360"
-                      loading="eager"
-                      fetchpriority="high"
-                      decoding="async"
-                    />
-                  </div>
-                <div class="mini-grid">
-                   <article class="mini-card">
-                    <i class="fas fa-briefcase"></i><span><strong>4+ years</strong> of experience</span>
-                  </article>
-                  <article class="mini-card">
-                   <i class="fas fa-id-badge"></i><span>UI Developer & Graphic Designer</span>
-                  </article>
-                  <article class="mini-card">
-                    <i class="fas fa-map-pin"></i> <span>Mayur Vihar, Delhi</span>
-                  </article>
-                  <div class="social-icons">
-                    <a href="#" title="Go to Linkedin profile">
-                     <i class="fab fa-linkedin-in"></i>
-                    </a>
-                     <a href="#" title="Go to Email">
-                     <i class="far fa-envelope"></i>
-                    </a>
-                    <a href="#" title="Go to Instagram profile">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                  <div class="d-flex mt-3">
-                    <a class="button button-primary me-2" href="#" title="Download CV"><span class="me-2"><i class="fas fa-arrow-down"></i></span>Download CV</a>
-                  </div>
-                </div>
-              </div> -->
+
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="more-info">
+      <div class="container">
+        <div class="info-row">
+          <div class="info-card">
+            <div class="info-icon">
+            <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="info-content">
+              <h5>4+ </h5>
+              <p>Years of experience</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="info-content">
+              <h5>20+ </h5>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="info-content">
+              <h5>100% </h5>
+              <p>Responsive Design</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info-content">
+              <h5>Clean </h5>
+              <p>and Maintainable Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="about-section">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-4">
-            <img src="/assets/imgs/profile-img.jpg" alt="" srcset="">
+            <img src="assets/imgs/profile-img.jpg" alt="" srcset="">
           </div>
-          <div class="col-md-8 px-md-5">
+          <div class="col-md-7 px-md-5">
             <div class="section-head animate-item">
               <p class="eyebrow"><i class="fas fa-user mr-2"></i> About Me</p>
-              <div class="about-me">
-                <p>I’m a UI Developer with 4+ years of experience in building responsive and user-focused web interfaces. I started my career in graphic design, which helps me bring a strong visual sense and UI/UX understanding to my development work.</p>
-                <p>I enjoy turning ideas into clean, functional, and visually appealing digital experiences. With a blend of development, graphic design, and UI/UX skills, I focus on creating interfaces that are not only attractive but also intuitive and easy to use.</p>
-                <p>My approach involves writing efficient code, improving performance, and ensuring consistency across devices and browsers. I’m always learning and exploring new technologies to create better and more seamless user experiences.</p>
-              </div>
+              <h2 class="mx-54">UI Developer who builds clean, responsive and user-friendly web experiences.</h2>
+               <p >I’m passionate about turning ideas and designs into modern, interactive, and accessible interfaces. I focus on writing clean code, creating reusable components, and ensuring every detail contributes to a seamless user experience.</p>
               <div class="about-explain">
                 <div class="about-text">
-                  <h3 class="text">04 <sub>+</sub></h3>
-                  <p class="text-sm">Years of Experience</p>
+                  <div class="info-icon">
+                   <i class="fas fa-chart-line"></i>
+                  </div>
+                  <strong>Focus on </strong>
+                  <p >Performance</p>
                 </div>
-                <div class="about-text">
-                  <h3 class="text">20 <sub>+</sub></h3>
-                  <p class="text-sm">projects completed on 5 countries</p>
+                   <div class="about-text">
+                  <div class="info-icon">
+                   <i class="fas fa-file-image"></i>
+                  </div>
+                  <strong>Pixel perfect </strong>
+                  <p >Implementation</p>
+                </div>
+                   <div class="about-text">
+                  <div class="info-icon">
+                   <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <strong>Responsive </strong>
+                  <p >Across All Devices</p>
+                </div>
+                   <div class="about-text">
+                  <div class="info-icon">
+                   <i class="fas fa-desktop"></i>
+                  </div>
+                  <strong>Accissiblity  </strong>
+                  <p >First Prefrence</p>
                 </div>
               </div>
             </div>
@@ -141,29 +167,160 @@
     <section class="service-section">
       <div class="container">
         <div class="section-head animate-item">
-          <p class="eyebrow"><i class="fas fa-wrench me-2"></i>Service</p>
-          <h2>What I Do?</h2>
+          <p class="eyebrow"><i class="fas fa-wrench me-2"></i>What I Do?</p>
+          <h2>I build modern, responsive interfaces that users love.</h2>
+          <p class="mx-54">I turn ideas and designs into clean, functional and user-friendly web experiences with a focus on performance, accessibility and create UI.</p>
         </div>
         <div class="service-row">
           <div class="service-card">
-            <h3>UI Development / Website Design</h3>
-            <p>Responsive, high-performance websites built with clean code and modern frameworks for seamless user experience.</p>
-            <img src="/assets/imgs/ui-dev.png" alt="UI Development" srcset="" class="service-img">
+            <h4>UI Development </h4>
+            <p>I build responsive, pixel-perfect iterfaces from scratch interfaces from scratch using clean code and modern frameworks.</p>
+            <img src="assets/imgs/ui-dev.png" alt="UI Development" srcset="" class="service-img">
           </div>
-            <div class="service-card">
-            <h3>UI Design</h3>
-            <p>User-centered interfaces crafted for clarity, usability, and visually engaging digital experiences.</p>
-            <img src="/assets/imgs/ui-design.png" alt="UI Development" srcset="" class="service-img">
+          <div class="service-card">
+            <h4>Responsive Design</h4>
+            <p>I create layouts that adapt seamlessly to all screen sizes and devices for the best user experience.</p>
+            <img src="assets/imgs/ui-design.png" alt="UI Development" srcset="" class="service-img">
           </div>
-            <div class="service-card">
-            <h3>Graphic Design</h3>
-            <p>Creative visuals and compelling designs that communicate ideas clearly and elevate brand identity.</p>
-            <img src="/assets/imgs/graphic-design.png" alt="UI Development" srcset="" class="service-img">
+          <div class="service-card">
+            <h4>Component Building</h4>
+            <p>I develop reusable, modular components that improve consistency and speed up development.</p>
+            <img src="assets/imgs/graphic-design.png" alt="UI Development" srcset="" class="service-img">
           </div>
-            <div class="service-card">
-            <h3>Video Editing</h3>
-            <p>Engaging and dynamic video content designed to tell stories, enhance visuals, and capture attention.</p>
-            <img src="/assets/imgs/video-editing.png" alt="UI Development" srcset="" class="service-img">
+          <div class="service-card">
+            <h4>Performance Focused</h4>
+            <p>I optimize interfaces for faster load times, smooth interactions and overall performance.</p>
+            <img src="assets/imgs/video-editing.png" alt="UI Development" srcset="" class="service-img">
+          </div>
+          <div class="service-card">
+            <h4>Accessible Ul</h4>
+            <p>I follow accessibility best practices to build inclusive experiences for all users.</p>
+            <img src="assets/imgs/video-editing.png" alt="UI Development" srcset="" class="service-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-section">
+      <div class="container">
+        <div class="section-head animate-item">
+          <p class="eyebrow"><i class="fas fa-code me-2"></i>SKILLS & TOOLS</p>
+          <div class="skillContent">
+            <h2>Technologies I use to bring ideas to life</h2>
+            <p>A combination of modern technologies, tools and best practices that help me build scalable and beautiful user experiences.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skillsCardRow skillsCardRow1">
+              <div class="skillHeading">
+                <div class="skillIcon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="skillText">
+                  <h5>FrontEnd Development</h5>
+                </div>
+              </div>
+              <div class="allSkills">
+                <div class="skillCard">
+                  <img src="assets/imgs/html-img.webp" alt="HTML5" srcset="">
+                  HTML5
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/css.webp" alt="CSS3" srcset="">
+                  CSS3
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/js.webp" alt="JavaScript" srcset="">
+                  JavaScript
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/reactjs.png" alt="React JS" srcset="">
+                  React JS
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skillsCardRow skillsCardRow2">
+              <div class="skillHeading">
+                <div class="skillIcon">
+                  <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <div class="skillText">
+                  <h5>Styling & UI</h5>
+                </div>
+              </div>
+              <div class="allSkills">
+                <div class="skillCard">
+                  <img src="assets/imgs/tailwind.png" alt="Tailwind CSS" srcset="">
+                  Tailwind CSS
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/scss-icon.png" alt="SCSS" srcset="">
+                  SCSS
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/bootstrap.png" alt="Bootstrap" srcset="">
+                  Bootstrap
+                </div>
+                
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-md-6">
+            <div class="skillsCardRow  skillsCardRow2">
+              <div class="skillHeading">
+                <div class="skillIcon">
+                  <i class="fas fa-draw-polygon"></i>
+                </div>
+                <div class="skillText">
+                  <h5>Design Tools</h5>
+                </div>
+              </div>
+              <div class="allSkills">
+                <div class="skillCard">
+                  <img src="assets/imgs/figma.png" alt="Figma" srcset="">
+                  Figma
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/photoshop.png" alt="Photoshop" srcset="">
+                  Photoshop
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/ai-img.png" alt="Illustrator" srcset="">
+                  Illustrator
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6">
+            <div class="skillsCardRow  skillsCardRow1">
+              <div class="skillHeading">
+                <div class="skillIcon">
+                  <i class="fas fa-toolbox"></i>
+                </div>
+                <div class="skillText">
+                  <h5> Tools & Workflow</h5>
+                </div>
+              </div>
+              <div class="allSkills">
+                <div class="skillCard">
+                  <img src="assets/imgs/vs-code.png" alt="VS Code" srcset="">
+                  VS Code
+                </div>
+                <div class="skillCard">
+                  <img src="assets/imgs/git-icon.png" alt="GitHub" srcset="">
+                  GitHub
+                </div>
+                
+                <div class="skillCard">
+                  <img src="assets/imgs/gitlab-icon.png" alt="GitLab" srcset="">
+                  GitLab
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -176,153 +333,168 @@
           <h2>Featured Projects</h2>
         </div>
         <div class="projects-container"></div>
-    
-      </div>
-    </section>
 
-    <section class="skill-section">
-      <div class="container">
-        <div class="section-head animate-item">
-          <p class="eyebrow"><i class="fas fa-code me-2"></i>Skills</p>
-          <div class="skillContent">
-            <h2>My Expertise</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skillsCardRow skillsCardRow1">
-              <div class="skillHeading">
-                <div class="skillIcon">
-                  <i class="fas fa-code"></i>
-                </div>
-                <div class="skillText">
-                  <h4>Code Languages</h4>
-                  <p>Building responsive and interactive web interfaces using modern technologies.</p>
-                </div>
-              </div>
-              <div class="allSkills">
-                <div class="skillCard">
-                  <img src="/assets/imgs/html-img.webp" alt="" srcset="">
-                  HTML
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/css.webp" alt="" srcset="">
-                  CSS & SCSS
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/js.webp" alt="" srcset="">
-                  JavaScript
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/reactjs.png" alt="" srcset="">
-                  React JS
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/bootstrap.png" alt="" srcset="">
-                  BootStrap
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/tailwind.png" alt="" srcset="">
-                  Tailwind CSS
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/php-img.png" alt="" srcset="">
-                  PHP
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="skillsCardRow  skillsCardRow2">
-              <div class="skillHeading">
-                <div class="skillIcon">
-                <i class="fas fa-pencil-ruler"></i>
-                </div>
-                <div class="skillText">
-                  <h4>Design Tools</h4>
-                  <p>Crafting visually engaging designs. and smooth visual content.</p>
-                </div>
-              </div>
-              <div class="allSkills">
-                <div class="skillCard">
-                  <img src="/assets/imgs/figma.png" alt="" srcset="">
-                  Figma
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/photoshop.png" alt="" srcset="">
-                  Photoshop
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/ai-img.png" alt="" srcset="">
-                  Illustrator
-                </div>
-                <div class="skillCard">
-                  <img src="/assets/imgs/kdenlive.png" alt="" srcset="">
-                  Kdenlive
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="experience-section">
-    <div class="container">
-      <div class="section-head animate-item">
-        <p class="eyebrow"><i class="fas fa-code me-2"></i>Experience</p>
-        <div class="skillContent">
-          <h2>Work Experience</h2>
-        </div>
-      </div>
-      <div class="companiesMain">
-        <div class="companyRow">
-          <div class="logos">
-            <img src="/assets/imgs/cf_logo.webp" alt="" srcset="">
-            <div class="companyName">
-              <h6>CodeFire Technology, Noida</h6>
-                <p class="text-sm">June 2024 – Present</p>
-            </div>
-          </div>
-          <div class="logoText">
-            <h4>UI Developer</h4>
-            <p>Developed and maintained responsive web interfaces using modern technologies, optimized performance and cross-device compatibility, and designed engaging marketing creatives and videos for campaigns and events.</p>
+      <div class="container">
+        <div class="section-head animate-item">
+          <p class="eyebrow"><i class="fas fa-code me-2"></i>Experience</p>
+          <div class="skillContent">
+            <h2>Work Experience</h2>
+            <p>A journey of learning, building and growing through real-world projects and hands-on experience.</p>
           </div>
         </div>
-        <div class="companyRow">
-            <div class="logos">
-              <img src="/assets/imgs/codenia-logo.png" alt="" srcset="">
-              <div class="companyName">
-                <h6>Codenia Technologies, Noida</h6>
-                <p class="text-sm">Feb 2023 - June 2024</p>
+        <div class="row">
+          <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="companiesMain">
+                    <div class="companyRow">
+                      <div class="designation">
+                        <h6>UI Developer</h6>
+                        <div class="badge">Working</div>
+                      </div>
+                       <div class="logos">
+                        <img src="assets/imgs/cf_logo.webp" alt="CodeFire Technology" srcset="">
+                      </div>
+                        <p class="coloredText">CodeFire Technology</h6>
+                        <div class="time-location">
+                          <p class="location-duration"><i class="far fa-calendar-alt"></i> June 2024 – Present</p>
+                          <p class="location-duration"><i class="fas fa-map-marker-alt"></i> Noida</p>
+                        </div>
+                        <p>Worked on real-world Ul development tasks using React and modern frontend tools. Collaborated with the team to build responsive and user-friendly web interfaces and designs</p>
+                    </div>
+                    <div class="achivement">
+                      <p class="coloredText">Key Achivement</p>
+                      <ul>
+                        <li><i class="fas fa-check-circle"></i> Developed and maintained responsive web interfaces</li>
+                        <li><i class="fas fa-check-circle"></i> optimized performance and cross-device compatibility</li>
+                        <li> <i class="fas fa-check-circle"></i> Designed engaging marketing creatives and videos</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="companiesMain">
+                    <div class="companyRow">
+                      <div class="designation">
+                        <h6>Website Designer</h6>
+                        <div class="badge">Full Time</div>
+                      </div>
+                       <div class="logos">
+                        <img src="assets/imgs/codenia-logo.png" alt="Codenia" srcset="">
+                      </div>
+                        <p class="coloredText">Codenia</h6>
+                        <div class="time-location">
+                          <p class="location-duration"><i class="far fa-calendar-alt"></i> Feb 2022 – Jun 2023</p>
+                          <p class="location-duration"><i class="fas fa-map-marker-alt"></i> Noida</p>
+                        </div>
+                        <p>Built and optimized modern web interfaces with a focus on performance, responsiveness, and consistent user experience across all platforms.</p>
+                    </div>
+                    <div class="achivement">
+                      <p class="coloredText">Key Achivement</p>
+                      <ul>
+                        <li><i class="fas fa-check-circle"></i> Built responsive components</li>
+                        <li> <i class="fas fa-check-circle"></i> Improved Ul consistency</li>
+                        <li><i class="fas fa-check-circle"></i> consistent user experience across all platforms</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="companiesMain">
+                    <div class="companyRow">
+                      <div class="designation">
+                        <h6>Graphic Designer</h6>
+                        <div class="badge">Part Time</div>
+                      </div>
+                        <div class="logos">
+                        <img src="assets/imgs/social-media-experts-logo.png" alt="Social Media Experts" srcset="">
+                      </div>
+                        <p class="coloredText">Social Media Experts</h6>
+                        <div class="time-location">
+                          <p class="location-duration"><i class="far fa-calendar-alt"></i> Mar 2022 – Jan 2023</p>
+                          <p class="location-duration"><i class="fas fa-map-marker-alt"></i> New Delhi</p>
+                        </div>
+                        <p>Designed banners, logos, and marketing creatives optimized for seamless performance across multiple digital platforms.</p>
+                    </div>
+                    <div class="achivement">
+                      <p class="coloredText">Key Achivement</p>
+                      <ul>
+                        <li><i class="fas fa-check-circle"></i> Created Social Media Posts</li>
+                        <li><i class="fas fa-check-circle"></i> Created engaging marketing creatives</li>
+                        <li> <i class="fas fa-check-circle"></i> Improved visual design consistency</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
               </div>
           </div>
-            <div class="logoText">
-              <h4>Website Designer</h4>
-              <p>Built and optimized modern web interfaces with a focus on performance, responsiveness, and consistent user experience across all platforms.</p>
+          <div class="col-md-3">
+            <div class="highlightedSection">
+                <div class="info-row">
+                  <h4>Experience HightLight</h4>
+                  <div class="info-card">
+                    <div class="info-icon">
+                   <i class="fas fa-user-cog"></i>
+                    </div>
+                    <div class="info-content">
+                      <h5>4+ </h5>
+                      <p>Years of experience</p>
+                    </div>
+                  </div>
+                  <div class="info-card">
+                    <div class="info-icon">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="info-content">
+                      <h5>20+ </h5>
+                      <p>Projects Completed</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="info-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <div class="info-content">
+                      <h5>35+ </h5>
+                      <p>Happy Clients</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card">
+                    <div class="info-icon">
+                      <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="info-content">
+                      <h5>8,320  </h5>
+                      <p>Hours of Development & Design</p>
+                    </div>
+                  </div>
+                </div>
             </div>
-        </div>
-        <div class="companyRow">
-            <div class="logos">
-              <img src="/assets/imgs/social-media-experts-logo.png" alt="" srcset="">
-              <div class="companyName">
-                <h6>Social Media Experts, Delhi</h6>
-                <p class="text-sm">Mar 2022 - Jan 2023</p>
-              </div>
           </div>
-            <div class="logoText">
-              <h4>Graphic Designer</h4>
-              <p>Designed banners, logos, and marketing creatives optimized for seamless performance across multiple digital platforms.</p>
-            </div>
+        </div>
+    
         </div>
       </div>
       </div>
-    </div>
     </section>
 
 
-    </main>
+  </main>
 
-    <div id="site-footer" data-include="components/footer.html"></div>
-  </body>
+  <div id="site-footer" data-include="components/footer.html"></div>
+</body>
+
 </html>
