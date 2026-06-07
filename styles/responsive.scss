@@ -1,0 +1,365 @@
+@media(max-width:1024px){
+    .site-header{
+        .brand-mark {
+        height: fit-content;
+        }
+    }
+    .hero {
+        padding: 8rem 0;
+    }
+    .info-row {
+        margin-top: -15rem;
+    }
+}
+
+@media(max-width:767px){
+    .site-header {
+    padding: 1rem 0 0;
+    width: 100%;
+    transform: none;
+    position: static;
+    background: #04020e;
+        .header-inner {
+            padding: 0 1.25rem;
+            border: 0;
+        }
+        .site-nav, .brand-copy {
+            display: none;
+        }
+        .brand-mark {
+            width: 3rem;
+        }
+        .nav-btns {
+            gap: 1rem;
+        }
+    }
+    h1{
+        font-size: 2.25rem;
+        line-height: 1.4;
+    }
+    h2{
+        font-size: 1.75rem;
+        max-width: 100%!important;
+    }
+    p{
+        font-size: 1rem;
+        max-width: 100%!important;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 1.25rem;
+    }
+
+    .eyebrow, .card-label {
+        font-size: 10px !important;
+        padding: .5rem .75rem;
+        margin-bottom: 1rem;
+        i{
+            font-size: 12px;
+        }
+    }
+
+    .btn, .button {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+       img {
+            width: 1rem;
+            margin-left: .5rem;
+        }
+    }
+
+    .hero {
+        padding: 3rem 0 4rem;
+        .hero-copy{
+            font-size: 1rem;
+        }
+        .social-connection{
+            p {
+                font-size: 1rem;
+            }
+           .socialLinks {
+                font-size: 1.25rem;
+                gap: 1rem;
+                margin-left: .5rem;
+            }
+        }
+        .profile-img {
+            height: 21rem;
+            object-fit: contain;
+        }
+    }
+    .info-row {
+        margin-top: -8rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        .info-card{
+            width: calc(50% - 1rem);
+            width: calc(50% - 1rem);
+            padding: 0 !important;
+            border: 0 !important;
+            align-items: flex-start;
+            gap: 1rem;
+            .info-icon {
+                width: 32px;
+                height: 32px;
+                font-size: .85rem;
+                min-width: 32px;
+            }
+            p{
+                font-size: .75rem;
+            }
+            h5 {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .AboutprofileImg {
+        display: none;
+    }
+
+    .section-head{
+         p{
+            font-size: 1rem;
+         }
+    }
+    .about-section {
+        padding: 5rem 0 3rem;
+        .about-explain{
+            .info-icon{
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: .5rem;
+                img {
+                width: 1.75rem;
+            }
+            }
+            .about-text{
+                    strong {
+                    font-size: .75rem;
+                }
+                p {
+                    font-size: .5rem;
+                }
+            }
+        }
+    }
+    .service-section {
+    padding: 3rem 0;
+    .service-row{
+         .service-card{
+            flex-wrap: wrap;
+            gap: .5rem;
+            padding: 2rem 0;
+            border-top: 1px solid;
+            border-bottom: 0;
+            .service-img {
+                position: static;
+                height: 285px;
+                width: 100%;
+                transform: none!important;
+                opacity: 1!important;
+                margin: 1rem 0;
+            }
+             h4 {
+                font-size: 1.25rem;
+                color: #fff;
+            }
+            p{
+                font-size: 1rem;
+            }
+            &:last-child{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                img{
+                    margin: 0;
+                }
+            }
+         }
+    }
+    }
+
+    .skill-section {
+        padding-bottom: 3rem;
+        .skillsCardRow {
+            padding: 1rem 1rem 1.25rem;
+            margin: 1rem 0 0;
+            border-radius: .5rem;
+            .skillHeading{
+                padding: 0px 0 1rem;
+                 h5, i {
+                    font-size: 1rem;
+                }
+            }
+           .allSkills {
+                gap: 1rem;
+                .skillCard {
+                    padding: .35rem;
+                    border-radius: 0.5rem!important;
+                    gap: .5rem;
+                    font-size: .75rem;
+                    img {
+                        height: 25px;
+                        width: 25px;
+                        object-fit: contain;
+                    }
+                }
+           }
+        }
+    }
+
+    .featured-section{
+        padding: 3rem 0;
+        .project-card {
+            top: 15px;
+            flex-direction: column;
+            height: fit-content;
+            padding: 0;
+            .project-preview {
+                width: 100%;
+                height: 400px;
+            }
+            .project-content {
+                width: 100%;
+                padding: 1rem 1rem 2rem;
+                gap: .5rem;
+                .project-icon {
+                    font-size: .75rem;
+                    padding: .5rem;
+                    i{
+                        font-size: .75rem;
+                    }
+                }
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: normal;
+                }
+                .skillCard {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border-radius: .5rem;
+                    padding: .5rem;
+                    img {
+                        height: 2rem;
+                    }
+                }
+                .text-link {
+                    margin-top: .75rem;
+                    font-size: 1.25rem;
+                    padding: .5rem 1rem;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;   
+            }
+        }
+    }
+
+    .experience-section{
+        padding: 3rem 0;
+        .companiesMain {
+            padding: 1rem;
+            border-radius: .5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+             .designation h6 {
+                font-size: 1rem;
+            }
+            .badge {
+                font-size: .75rem;
+                padding: .5rem 1rem;
+                border-radius: 1rem;
+            }
+            .coloredText, p {
+                font-size: .75rem;
+            }
+            .time-location {
+                flex-wrap: wrap;
+                gap: .5rem 1rem;
+                margin: .5rem 0 .25rem;
+                p.coloredText {
+                    width: 100%;
+                }
+            }
+            .companyRow{
+                padding-bottom: 1rem;
+            }
+             .achivement {
+                width: 100%;
+                margin: 0;
+                border: 0!important;
+                padding: 0;
+                li{
+                    font-size: .75rem;
+                    gap: .5rem!important;
+                    i{
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        .highlightedSection{
+            margin: .5rem 0 1.5rem;
+             .info-row {
+                max-width: 100%;
+                padding: 1rem;
+                border-radius: .5rem;
+                h4{
+                    font-size: 1.25rem;
+                }
+               .info-card{
+                gap: 1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+                 .info-icon {
+                    width: 32px;
+                    height: 32px;
+                    font-size: .85rem;
+                    min-width: 32px;
+                }
+               }
+            }
+        }
+         .quoteSection {
+            padding: 1rem;
+            border-radius: .5rem;
+            .quoteIcon {
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    .contact-section {
+        padding: 3rem  0;
+        .soft-card, .form-card {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1.25rem;
+           .field-grid {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+                margin-bottom: 1rem;
+            }
+            .btn-primary {
+                min-width: 112px;
+                padding: .75rem 1.5rem;
+                width: 100%;
+            }
+        }
+        .form-card{
+            margin: 0;
+            margin-top: 1rem;
+        }
+    }
+
+    .site-footer {
+        padding: 1rem 0;
+    }
+}

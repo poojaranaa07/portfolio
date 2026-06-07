@@ -483,68 +483,68 @@ function initSkillBars() {
   animateStack();
 }
 
-function initLeadForm() {
-  const form = document.getElementById("lead-form");
-  const status = document.getElementById("form-status");
+// function initLeadForm() {
+//   const form = document.getElementById("lead-form");
+//   const status = document.getElementById("form-status");
 
-  if (!form || !status) {
-    return;
-  }
+//   if (!form || !status) {
+//     return;
+//   }
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+//   form.addEventListener("submit", async (event) => {
+//     event.preventDefault();
 
-    const payload = Object.fromEntries(new FormData(form).entries());
+//     const payload = Object.fromEntries(new FormData(form).entries());
 
-    if (!payload.name || !payload.email || !payload.message) {
-      status.textContent = "Please fill all required fields.";
-      return;
-    }
+//     if (!payload.name || !payload.email || !payload.message) {
+//       status.textContent = "Please fill all required fields.";
+//       return;
+//     }
 
-    const subject = encodeURIComponent(`${payload.projectType || "Website inquiry"} from ${payload.name}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${payload.name}`,
-        `Email: ${payload.email}`,
-        `Phone: ${payload.phone || "-"}`,
-        `Project Type: ${payload.projectType || "-"}`,
-        "",
-        "Message:",
-        payload.message
-      ].join("\n")
-    );
+//     const subject = encodeURIComponent(`${payload.projectType || "Website inquiry"} from ${payload.name}`);
+//     const body = encodeURIComponent(
+//       [
+//         `Name: ${payload.name}`,
+//         `Email: ${payload.email}`,
+//         `Phone: ${payload.phone || "-"}`,
+//         `Project Type: ${payload.projectType || "-"}`,
+//         "",
+//         "Message:",
+//         payload.message
+//       ].join("\n")
+//     );
 
-    const sourcePage = document.body.dataset.page === "hire" ? "hire" : "contact";
+//     const sourcePage = document.body.dataset.page === "hire" ? "hire" : "contact";
 
-    try {
-      window.sessionStorage.setItem(
-        "lead-submission",
-        JSON.stringify({
-          name: payload.name,
-          projectType: payload.projectType || "Website inquiry",
-          source: sourcePage
-        })
-      );
-    } catch (error) {
-      console.error(error);
-    }
+//     try {
+//       window.sessionStorage.setItem(
+//         "lead-submission",
+//         JSON.stringify({
+//           name: payload.name,
+//           projectType: payload.projectType || "Website inquiry",
+//           source: sourcePage
+//         })
+//       );
+//     } catch (error) {
+//       console.error(error);
+//     }
 
-    status.textContent = "Opening your email app and taking you to the thank-you page...";
+//     status.textContent = "Opening your email app and taking you to the thank-you page...";
 
-    const emailLink = document.createElement("a");
-    emailLink.href = `mailto:poojaranaa07@gmail.com?subject=${subject}&body=${body}`;
-    emailLink.style.display = "none";
-    document.body.append(emailLink);
-    emailLink.click();
-    emailLink.remove();
+//     const emailLink = document.createElement("a");
+//     emailLink.href = `mailto:poojaranaa07@gmail.com?subject=${subject}&body=${body}`;
+//     emailLink.style.display = "none";
+//     document.body.append(emailLink);
+//     emailLink.click();
+//     emailLink.remove();
 
-    window.setTimeout(() => {
-      const thankYouUrl = buildSiteUrl("thank-you/");
-      thankYouUrl.searchParams.set("source", sourcePage);
-      window.location.assign(thankYouUrl.href);
-    }, 180);
-  });
-}
+//     window.setTimeout(() => {
+//       const thankYouUrl = buildSiteUrl("thank-you/");
+//       thankYouUrl.searchParams.set("source", sourcePage);
+//       window.location.assign(thankYouUrl.href);
+//     }, 180);
+//   });
+// }
 
 function initThankYouPage() {
   if (document.body.dataset.page !== "thank-you") {
@@ -772,3 +772,63 @@ async function bootstrap() {
 }
 
 bootstrap();
+
+document.getElementById("lead-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = this.name.value.trim();
+    const email = this.email.value.trim();
+    const phone = this.phone.value.trim();
+    const projectType = this.projectType.value;
+    const message = this.message.value.trim();
+
+    const status = document.getElementById("form-status");
+
+    // Reset message
+    status.textContent = "";
+
+    // Validation
+    if (!name) {
+        status.textContent = "Please enter your name.";
+        return;
+    }
+
+    if (!email) {
+        status.textContent = "Please enter your email.";
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        status.textContent = "Please enter a valid email address.";
+        return;
+    }
+
+    if (!message) {
+        status.textContent = "Please enter your project details.";
+        return;
+    }
+
+    const whatsappMessage = `
+🚀 New Portfolio Inquiry
+
+👤 Name: ${name}
+📧 Email: ${email}
+📱 Phone: ${phone || "Not provided"}
+💼 Project Type: ${projectType}
+
+📝 Message:
+${message}
+    `;
+
+    const whatsappNumber = "918130489067"; // Replace with your number
+
+    window.open(
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+        "_blank"
+    );
+
+    // Optional success message
+    status.textContent = "Redirecting to WhatsApp...";
+});
